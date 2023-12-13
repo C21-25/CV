@@ -1,0 +1,247 @@
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* preloader */ /* Loader Styles start here */
+.loader-wrapper {
+  --line-width: 5px;
+  --curtain-color: #f1faee;
+  --outer-line-color: #a8dadc;
+  --middle-line-color: #457b9d;
+  --inner-line-color: #1d3557;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.loader {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: var(--line-width) solid transparent;
+  border-top-color: var(--outer-line-color);
+  border-radius: 100%;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  z-index: 1001;
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border: var(--line-width) solid transparent;
+  border-top-color: var(--inner-line-color);
+  border-radius: 100%;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+
+.loader:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  border: var(--line-width) solid transparent;
+  border-top-color: var(--middle-line-color);
+  border-radius: 100%;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.loader-wrapper .loader-section {
+  position: fixed;
+  top: 0;
+
+  background-color: black;
+  width: 51%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.loader-wrapper .loader-section.section-left {
+  left: 0;
+}
+.loader-wrapper .loader-section.section-right {
+  right: 0;
+}
+
+/* Loaded Styles */
+.loaded .loader-wrapper .loader-section.section-left {
+  transform: translateX(-100%);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.loaded .loader-wrapper .loader-section.section-right {
+  transform: translateX(100%);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.loaded .loader {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.loaded .loader-wrapper {
+  visibility: hidden;
+  transform: translateY(-100%);
+  transition: all 0.3s 1s ease-out;
+}
+
+/* main code */
+
+.body {
+  display: flex;
+  flex-direction: row;
+  background-color: rebeccapurple;
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/021/889/689/original/trendy-pink-and-blue-glowing-neon-lines-cyberpunk-technology-motion-background-video.jpg');
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+
+.name-surname {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+
+.list {
+  color: white;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.list li {
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+.section-l {
+  left: 7.8%;
+  background-color: blueviolet;
+  width: 20%;
+  /* height: auto; */
+  position: fixed;
+  width: 20%;
+  display: flex;
+  padding-top: 10px;
+  align-items: center;
+  flex-direction: column;
+
+  /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+}
+
+hr {
+  background-color: grey;
+  opacity: 70;
+  width: 100%;
+}
+
+.section-r {
+  background-color: white;
+  width: 40%;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.about-me-list span {
+  color: #50c878;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.skills {
+}
+
+.progress {
+  height: 6px;
+  background-color: #e0e0e0;
+}
+
+.progress-bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 12px;
+  line-height: 1px;
+  color: #fff;
+  text-align: center;
+  background-color: #50c878;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: width 0.6s ease;
+  -o-transition: width 0.6s ease;
+  transition: width 0.6s ease;
+}
+
+.text-grey {
+  color: gray;
+}
+
+.education-block {
+  display: flex;
+}
+
+.list a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.work-experience {
+  display: flex;
+}
+
+.contacts a:hover {
+  color: orange;
+}
+
+.work-experience a:hover {
+  color: limegreen;
+}
+

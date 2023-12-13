@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    <title>My CV</title>
+  </head>
+
+<!-- Тіло проекта -->
+  <body class="body">
+    <!-- preloader -->
+    <div class="loader-wrapper">
+      <div class="loader">
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+
+
+    <!-- main code  -->
+
+    <!-- Ліва секція -->
+        <section class="section-l">
+          <img
+            src="./photo_2023-11-30_10-27-51.jpg"
+            width="177"
+            height="200"
+            style="border-radius: 50%"
+          />
+          <!-- Блок з ім'ям і прізвищем -->
+          <div class="name-surname">
+            <h3>Vadym Shinkarenko</h3>
+            <p>Cadet</p>
+          </div>
+          <!-- Тег для нижньої полоси -->
+          <hr/>
+          <!-- Тег для навігації -->
+          <nav>
+            <!-- Список з навігацією (clickable) -->
+              <ul class="list">
+                  <li><a href="#hobbies">MY HOBBIES</a></li>
+                  <li><a href="#skills">MY SKILLS</a></li>
+                  <li><a href="#work-experience">MY WORK EXPERIENCE</a></li>
+                <li>
+                    <a href="#education">MY EDUCATION</a>
+                </li>
+              </ul>
+          </nav>
+        </section>
+
+        <!-- Права секція -->
+        <section class="section-r">
+          <!-- Блок "Про мене", короткий опис -->
+          <div class="about-me">
+            <h3>ABOUT ME</h3>
+            <a href="Резюме Шинкаренко Вадим.pdf" class="resume-download" data-toggle="tooltip" data-placement="bottom" title="Download">
+          <i class="fa fa-download" aria-hidden="true"> </i>  Download Resume
+        </a>
+            <p>
+              I am quite calm and reserved, I feel a fine line in communicating with people, but where necessary, I can cross it slightly.
+I am also able to restrain my emotions and compromise, although sometimes with internal rebellion. To learning, to perceiving
+new information and the course of circumstances, I adapt quite quickly, but I hope for the help of colleagues in case of certain
+in case of any difficulties. I do not have any achievements as such, as I have not worked in this field, so I do not have experience yet, but I have been working part-time for some time, so I am ready for a proper
+part-time job, so I am ready for proper self-discipline, organization, concentration and dedication to the work process. As for
+goals and ambitions, I can say that I see a potential job as a great opportunity not only to earn money, but also to
+improving certain skills and acquiring new useful qualities that are necessary both professionally and in all other areas of life.
+
+            </p>
+          </div>
+          <!-- Тег нижньої полоси -->
+          <hr />
+          <!-- Блок "Мої контакти" -->
+          <div class="contacts" id="contacts">
+            <h3>My contacts</h3>
+            <!-- тег ul - основний тег для створення списка (блок) -->
+            <ul class="about-me-list">
+              <!-- тег li - тег для елемента в списку -->
+              <!-- тег span - ІНЛАЙН-тег (займає стільки ширини скільки він займає, на відміну від БЛОЧНОГО тега, який займає всю ширину блоку, незважаючи ні на що) -->
+              <!-- тег span - використовується зазвичай для доповнення до основного контенту (якщо з основного тексту ви хочете виділити якийсь текст і придумати йому особливий стиль) -->
+              <li>
+                <span>Location</span>: Kyiv </li>
+              <li><span>Birthday</span>: 25.07.2004</li>
+              <li><span>Email</span>: vadimnovak257@gmail.com</li>
+              <li><span>Phone</span>: +380982784585</li>
+              <li><span>Social links</span>: <span style="vertical-align: middle;"><img src="./telegram-svgrepo-com.svg" alt="telegram" width="20" height="20"  /></span> <a href="https://t.me/dunkan_21">https://t.me/dunkan_21</a></li>
+            </ul>
+            <!-- Тег нижньої полоси -->
+            <hr />
+          </div>
+          <!-- Блок "Мої навички", список моїх навичок -->
+          <div class="skills" id="skills">
+            <h3>My skills</h3>
+            <div>
+              <p style="margin-bottom: 10px">English <span class="text-grey">(Upper-Intermediate)</span></p>
+              <!-- Задаємо div'у вбудований для нього атрибут aria-valuenow, aria-valuemin, aria-valuemax   -->
+              <!-- Цей код створює елемент прогресу, який показує, наскільки виконано якесь завдання -->
+              <!-- Це елемент прогресу -->
+              <div class="progress">
+                 
+                <div
+                  class="progress-bar"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 75%"
+                ></div>
+              </div>
+            </div>
+            <div>
+              <p style="margin-bottom: 10px">
+                Communication skills <span class="text-grey"></span>
+              </p>
+              <div class="progress">
+              
+
+                <div
+                  class="progress-bar"
+                  aria-valuenow="70"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 70%"
+                ></div>
+              </div>
+            </div>
+            <div>
+
+              <p style="margin-bottom: 10px">PC usage level <span class="text-grey"></span></p>
+              <div class="progress">
+                 
+                <div
+                  class="progress-bar"
+                  aria-valuenow="60"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 60%"
+                ></div>
+              </div>
+            </div>
+            <div>
+              <p style="margin-bottom: 10px">Windows OS <span class="text-grey"></span></p>
+              <div class="progress">
+                 
+
+                <div
+                  class="progress-bar"
+                  aria-valuenow="60"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 60%"
+                ></div>
+              </div>
+            </div>
+            <div>
+              <p style="margin-bottom: 10px">HTML and CSS <span class="text-grey"></span></p>
+              <div class="progress">
+                
+
+                <div
+                  class="progress-bar"
+                  aria-valuenow="60"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 60%"
+                ></div>
+              </div>
+            </div>
+            <div>
+              <p style="margin-bottom: 10px">Cisco <span class="text-grey"></span></p>
+              <div class="progress">
+                 
+                <div
+                  class="progress-bar"
+                  aria-valuenow="30"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 50%"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!-- Тег нижньої полоси -->
+        <hr />
+    
+          <!-- Блок з моєю освітою -->
+          <div class="education" id="education">
+              <h3>Education</h3>
+              <div class="education-block">
+                <div>
+                  <!-- Інлайн тег span -->
+                    <span class="text-grey">< 2021</span>
+                    <p>
+                        повна середня освіта в Шрамківська ЗОШ І-ІІІ ступенів
+                    </p>
+                </div>
+            </div>
+            <div class="education-block">
+                <div>
+                  <!-- Інлайн тег span -->
+                    <span class="text-grey">вер 2021 - сер 2022 </span><p>
+                        1 курс Державний
+                        університет телекомунікацій, Київ Спеціальність 172 Телекомунікації
+                        та радіотехніка
+                    </p>
+    
+                </div>
+            </div>
+            <div class="education-block"">
+                <div>
+                  <!-- Інлайн тег span -->
+
+                    <span class="text-grey">вер 2022 - теп. час</span>
+                    <p>
+                      2 курс навчання Інститут спеціального зв'язку та
+                      захисту інформації НТУУ «КПІ», Київ Спеціальність 125 Кібербезпека
+                    </p>
+                </div>
+            </div>
+          </div>
+          <hr />
+    
+    <!-- Блок з моїми хоббі -->
+          <div class="hobbies" id="hobbies">
+            <h3>My hobbies</h3>
+            <p>Football, Swimming, Travelling, Reading</p>
+          </div>
+          <hr />
+    
+          <!-- Блок з моїм досвідом роботи -->
+          <div class="work-experience" id="work-experience">
+            <div>
+              <h3>My work experience</h3>
+              <p class="text-grey">Software Sales Manager (0.6 years)</p>
+              <p>I have acquired some skills through my work experience for GotYourBackSupport. For instance, configuring VPN connection and remote connection to customer's computers, working on remote desktop with CRM systems, spreadsheets etc. But, as for me, the main skill is a deeper understanding of social engineering.</p>
+              <!-- Посилання на сайт компанії -->
+              <a href="https://gotyourbacksupport.com">https://gotyourbacksupport.com</a>
+            </div>
+            <!-- Додатковий блок для рисунка -->
+            <div>
+              <img src="./work-exp.jpg" />
+            </div>
+          </div>
+        </section>
+   
+    <script src="./script.js"></script>
+  </body>
+</html>
